@@ -64,3 +64,137 @@ h1, h2, p {
     margin: 5px 0;
     width: 25px;
 }
+
+.mobile-navigation {
+    display: none;
+    background-color: #4f46e5;
+    padding: 20px;
+}
+
+.mobile-navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mobile-navigation ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Hero Section */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #4f46e5, #4338ca);
+    color: white;
+    min-height: 80vh;
+}
+
+.intro-text h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.intro-text span {
+    color: #ffcc00;
+}
+
+.details {
+    margin: 15px 0;
+    line-height: 1.6;
+}
+
+.action-buttons {
+    margin: 20px 0;
+}
+
+.action-buttons .button {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out;
+    font-weight: bold;
+}
+
+.primary-btn {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.primary-btn:hover {
+    background-color: #e6b800;
+}
+
+.secondary-btn {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.secondary-btn:hover {
+    background-color: white;
+    color: #333;
+}
+
+/* Hero Image */
+.intro-image {
+    text-align: center;
+}
+
+.profile-frame {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #f7f6f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-items {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-navigation {
+        display: none;
+    }
+
+    .mobile-navigation.active {
+        display: block;
+    }
+
+    .intro-section {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 10px;
+    }
+
+    .intro-text {
+        margin-bottom: 20px;
+    }
+
+    .profile-frame {
+        margin-bottom: 20px;
+    }
+}
